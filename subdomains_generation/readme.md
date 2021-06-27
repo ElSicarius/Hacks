@@ -11,4 +11,5 @@ python3.9 generation.py <templatename> <app name>
 
 Usefull example:
 
-python3.9 generation.py example login | subjack ```
+python3.9 generation.py example login | subjack 
+```
