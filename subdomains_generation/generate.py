@@ -4,7 +4,7 @@ import sys
 
 if __name__ == '__main__':
 
-    template = "src/tools/modules/"+sys.argv[1]+'.yml'
+    template = "templates/"+sys.argv[1]+'.yml'
     app = sys.argv[2]
 
     template_object = yaml.load(open(template), Loader=yaml.FullLoader)
