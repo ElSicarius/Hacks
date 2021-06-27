@@ -12,4 +12,4 @@ for url in sys.stdin.readlines():
     if len(path) >= 1 and re.findall("[^.]+[a-zA-Z\d]+", str(path[-1])):
         path = path[:-1]
     path = os.path.join("/", *path)
-    sys.stdout.write(urlunparse(url._replace(path=path))+"\n")
+    sys.stdout.write(urlunparse(url._replace(path=path, query=""))+"\n")
