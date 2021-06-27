@@ -1,0 +1,18 @@
+
+# example, for an app like "login" this will generate things like:
+#- login.example.com
+#- secure.dev1.login.example.com
+#- dev1.login.example.com
+
+root: "{{app}}.example.com"
+
+prefixes:
+    - secure
+
+modulus:
+    template: "{{modulus}}.{{root}}"
+    var:
+        - dev
+        - dev1
+        - qa
+        - qa1
